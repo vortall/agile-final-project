@@ -1,0 +1,41 @@
+name: User Story
+description: Create a new user story using this template.
+title: "[Story]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## User Story
+        Fill in the following details.
+
+  - type: input
+    id: role
+    attributes:
+      label: As a
+      description: Who is the user or role?
+      placeholder: e.g. customer, admin
+
+  - type: input
+    id: need
+    attributes:
+      label: I need
+      description: What does the user need?
+      placeholder: e.g. ability to reset password
+
+  - type: input
+    id: reason
+    attributes:
+      label: So that
+      description: Why does the user need it?
+      placeholder: e.g. they can regain access
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria (Gherkin)
+      description: Define clear acceptance criteria.
+      placeholder: |
+        Given ...
+        When ...
+        Then ...
